@@ -40,12 +40,12 @@
 <main>
   <section>
     <div class="container">
-      <h2>
+      <h2 class="visually-hidden">
         Слайдер в заголовке
       </h2>
       <ul>
         <li>
-          <button type="button" title="Текущая">1</button>
+          <button type="button" title="Текущий слайд">1</button>
         </li>
         <li>
           <button type="button" title="2й слайд">2</button>
@@ -55,7 +55,7 @@
         </li>
       </ul>
       <section class="main-header-slide-1">
-        <h3>Слайдер - 1</h3>
+        <h3 class="visually-hidden">Слайдер - 1</h3>
         <p>
           Долго, дорого,<br>
           скрупулезно.
@@ -67,7 +67,7 @@
         <a href="#">Узнать больше</a>
       </section>
       <section class="main-header-slide-2">
-        <h3>Слайдер - 2</h3>
+        <h3 class="visually-hidden">Слайдер - 2</h3>
         <p>
           Любим математику<br>
           как никто другой
@@ -79,7 +79,7 @@
         <a href="#">Узнать больше</a>
       </section>
       <section class="main-header-slide-3">
-        <h3>Слайдер - 3</h3>
+        <h3 class="visually-hidden">Слайдер - 3</h3>
         <p>
           Только ночь,<br>
           только хардкор
@@ -94,7 +94,7 @@
   </section>
   <div class="container">
     <section class="product-options">
-      <h2>Варианты продукции</h2>
+      <h2 class="visually-hidden">Варианты продукции</h2>
       <ul>
         <li>
           <article>
@@ -154,7 +154,7 @@
       </div>
     </section>
     <section>
-      <h2>Наши работы</h2>
+      <h2 class="visually-hidden">Наши работы</h2>
       <ul>
         <li>
           <a href="#">
@@ -183,7 +183,7 @@
 <footer>
   <div class="container container_big">
     <section>
-      <h2>Карта</h2>
+      <h2 class="visually-hidden">Карта</h2>
       <a href="#">
         <img src="img/map.png" alt="Карта с адресом" width="1440" height="416">
       </a>
@@ -191,7 +191,7 @@
         <h3>NЁRDS DESIGN STUDIO</h3>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p>
-          тел. <a href="tel:+78122757575">+7(812)275-75-75</a>
+          тел. <a href="tel:+78122757575" aria-label="Телефонный контакт">+7(812)275-75-75</a>
         </p>
         <a href="#">Напишите нам</a>
       </section>
@@ -199,28 +199,26 @@
   </div>
   <div class="container">
     <section>
+      <h2 class="visually-hidden">Давайте дружить</h2>
       <ul>
         <li>
           <a href="#">
-            Вконтакте
             <img src="img/vk-icon.svg" alt="Ссылка на вк" width="27" height="15">
           </a>
         </li>
         <li>
           <a href="#">
-            Фейсбук
             <img src="img/fb-icon.svg" alt="Карта с адресом" width="12" height="22">
           </a>
         </li>
         <li>
           <a href="#">
-            Инстаграмм
             <img src="img/insta-icon.svg" alt="Карта с адресом" width="21" height="21">
           </a>
         </li>
       </ul>
       <div>
-        <p>Давайте дружить, это выгодно!</p>
+        <h3>Давайте дружить, это выгодно!</h3>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </section>
@@ -228,11 +226,26 @@
 </footer>
 <section>
   <h2>Напишите нам</h2>
-  <!-- TODO Here will be the form -->
+  <form action="#" method="post">
+    <label>
+      Ваше имя:
+      <input type="text" placeholder="Имя Фамилия">
+    </label>
+    <label>
+      Ваш email:
+      <input type="email" placeholder="email@example.com">
+    </label>
+    <label>
+      Текст письма:
+      <textarea placeholder="В свободной форме">
+      </textarea>
+    </label>
+    <button type="submit">Отправить</button>
+  </form>
   <button type="button">Закрыть</button>
 </section>
 <section>
-  <h2>Здесь будет карта</h2>
+  <h2 class="visually-hidden">Здесь будет карта</h2>
   <!-- TODO Here will be a map -->
   <button type="button">Закрыть</button>
 </section>
