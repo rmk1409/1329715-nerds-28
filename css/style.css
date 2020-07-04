@@ -26,6 +26,10 @@ body {
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 img {
@@ -50,14 +54,33 @@ a {
   overflow: hidden;
 }
 
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 1158px;
+}
+
+.page {
+  height: 100%;
+}
+
+.container_big {
+  width: 1460px;
+}
+
 .main-header nav {
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
+  display: flex;
 }
 
-.main-header ul,
-.main-slider ul,
+.logo {
+  margin-right: 200px;
+}
+
+.navigation-links,
+.main-slider-buttons,
 .lets-be-friends-block ul,
 .form-filter ul,
 .sort-section ul,
@@ -66,6 +89,32 @@ a {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.lets-be-friends-block ul {
+  display: flex;
+  width: 260px;
+  justify-content: space-between;
+  gap: 9px;
+  margin-right: 140px;
+}
+
+.navigation-links {
+  display: flex;
+  margin-right: 240px;
+}
+
+.main-slider-buttons {
+  /*display: flex;*/
+  display: none;
+}
+
+.main-slider-buttons li {
+  margin-right: 17px;
+}
+
+.main-slider-buttons li:last-child {
+  margin-right: 0;
 }
 
 .main-header a:hover {
@@ -83,30 +132,99 @@ a {
 
 .main-header,
 .main-slider,
-.h1,
 .map-block {
   background-color: var(--basic-grey);
+}
+
+.main-header-catalog {
+  background-color: var(--basic-white);
+}
+
+.main-slider {
+  margin-bottom: 80px;
 }
 
 .h1 {
   padding: 0;
   margin: 0;
+  margin-top: 72px;
+  margin-bottom: 163px;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: 260px repeat(2, 360px);
+  grid-template-rows: repeat(2, auto);
+  gap: 48px 140px;
+  margin-bottom: 60px;
+}
+
+.filter-section {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+}
+
+.sort-section {
+  grid-column: 2/-1;
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  gap: 40px;
+}
+
+.sort-section__div-for-lists {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort-section ul {
+  display: flex;
+}
+
+.catalog-items {
+  grid-column: 2/-1;
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  gap: 30px 40px;
+}
+
+.pages-section {
+  grid-column: 2/-1;
+  display: flex;
+  align-items: center;
 }
 
 .main-slider h3 {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.main-slider p {
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.main-header-slide-2,
+.main-header-slide-3 {
+  display: none;
+}
+
+.main-header-slide-1,
+.main-header-slide-2,
+.main-header-slide-3 {
+  background-repeat: no-repeat;
+  width: 420px;
 }
 
 .main-header-slide-1 {
   background-image: url("../img/nerds-index-slide1 1.png");
-  background-repeat: no-repeat;
+
 }
 
 .main-header-slide-2 {
   background-image: url("../img/nerds-index-slide2 1.png");
-  background-repeat: no-repeat;
 }
 
 .main-header-slide-3 {
@@ -126,7 +244,6 @@ a {
   background-color: var(--basic-red);
   border: none;
   border-radius: 3px;
-  box-sizing: border-box;
 }
 
 .button:hover {
@@ -176,6 +293,14 @@ a {
   color: var(--basic-black);
 }
 
+.page-button {
+  margin-right: 11px;
+}
+
+.page-button:last-child {
+  margin-right: 0;
+}
+
 .button-filter:hover,
 .page-button:hover {
   background-color: var(--grey-hover);
@@ -191,10 +316,40 @@ a {
   background-color: var(--basic-white);
 }
 
+.product-options img {
+  margin-bottom: 25px;
+}
+
 .product-options h3 {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.product-options p {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.product-options ul {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 100px;
+}
+
+.about-us-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us-block div:first-child {
+  width: 660px;
+}
+
+.about-us-block div:last-child {
+  width: 360px;
 }
 
 .about-us-block h2 {
@@ -231,26 +386,75 @@ a {
   text-transform: uppercase;
 }
 
+.our-contacts-block h3 {
+  margin: 0;
+  margin-bottom: 23px;
+}
+
 .our-contacts-block p {
   font-size: 16px;
   line-height: 18px;
+  margin: 0;
+  margin-bottom: 37px;
+}
+
+.lets-be-friends-block {
+  display: flex;
+  align-items: center;
 }
 
 .lets-be-friends-block h3 {
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .lets-be-friends-block p {
   font-size: 16px;
   line-height: 22px;
+  margin: 0;
+}
+
+.write-to-us-popup {
+  width: 960px;
+  min-height: 590px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  background-color: var(--basic-white);
+  display: none;
+  position: fixed;
+  left: 50%;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.write-to-us-popup form {
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  column-gap: 40px;
 }
 
 .write-to-us-popup h2 {
   font-weight: bold;
   font-size: 45px;
   line-height: 53px;
+  margin: 0;
+  margin-bottom: 3px;
+}
+
+.write-to-us-popup label {
+  margin: 34px 0 9px;
+}
+
+.write-to-us-popup textarea {
+  margin-bottom: 47px;
+}
+
+.label-for-text-area,
+.write-to-us-popup textarea {
+  grid-column: -1/1;
 }
 
 .write-to-us-popup label,
@@ -270,19 +474,39 @@ a {
   border: 2px solid var(--grey-input-hover);
 }
 
-.link-sort {
+.link-sort,
+.link-sort-img img {
   font-size: 14px;
   line-height: 18px;
   opacity: 0.3;
 }
 
-.link-sort:hover {
+.link-sort:hover,
+.link-sort-img:hover img {
   opacity: 0.6;
 }
 
 .link-sort:active,
-.link-sort_active {
+.link-sort_active,
+.link-sort-img_active img,
+.link-sort-img:active img {
   opacity: 1;
+}
+
+.fieldset-price {
+  margin-bottom: 54px;
+}
+
+.fieldset-grid {
+  margin-bottom: 45px;
+}
+
+.fieldset-features {
+  margin-bottom: 50px;
+}
+
+.fieldset-price legend {
+  margin-bottom: 48px;
 }
 
 .fieldset-price label {
@@ -303,6 +527,16 @@ a {
   line-height: 22px;
 }
 
+.our-clients-section ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.our-contacts-block {
+  width: 320px;
+  background-color: var(--basic-white);
+}
+
 .our-clients-section a {
   opacity: 0.2;
 }
@@ -313,4 +547,8 @@ a {
 
 .our-clients-section a:active {
   opacity: 0.1;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }

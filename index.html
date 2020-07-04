@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
 <head>
   <meta charset="utf-8">
   <title>Нёрдс - Главная</title>
@@ -15,7 +15,7 @@
       <a href="index.html" class="logo">
         <img src="img/nerds-logo.png" alt="Логотип" width="160" height="66">
       </a>
-      <ul>
+      <ul class="navigation-links">
         <li>
           <a href="index.html">
             Студия
@@ -47,7 +47,7 @@
       <h2 class="visually-hidden">
         Слайдер в заголовке
       </h2>
-      <ul>
+      <ul class="main-slider-buttons">
         <li>
           <button type="button" title="Текущий слайд"></button>
         </li>
@@ -187,8 +187,9 @@
       </a>
       <article class="our-contacts-block">
         <h3>NЁRDS DESIGN STUDIO</h3>
-        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p>
+          191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8<br><br>
           тел. <a href="tel:+78122757575" aria-label="Телефонный контакт">+7(812)275-75-75</a>
         </p>
         <a href="#" class="button">Напишите нам</a>
@@ -225,19 +226,12 @@
 <section class="write-to-us-popup">
   <h2>Напишите нам</h2>
   <form action="#" method="post">
-    <label>
-      Ваше имя:
-      <input type="text" placeholder="Имя Фамилия">
-    </label>
-    <label>
-      Ваш email:
-      <input type="email" placeholder="email@example.com">
-    </label>
-    <label>
-      Текст письма:
-      <textarea placeholder="В свободной форме">
-      </textarea>
-    </label>
+    <label for="name-input">Ваше имя:</label>
+    <label for="email-input">Ваш email:</label>
+    <input id="name-input" type="text" placeholder="Имя Фамилия" name="name">
+    <input id="email-input" name="email" type="email" placeholder="email@example.com">
+    <label for="message-text-area" class="label-for-text-area">Текст письма:</label>
+    <textarea id="message-text-area" name="message" placeholder="В свободной форме"></textarea>
     <button type="submit" class="button">Отправить</button>
   </form>
   <button type="button">Закрыть</button>
