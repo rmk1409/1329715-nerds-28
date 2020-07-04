@@ -3,13 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Нёрдс - Каталог</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="main-header">
   <div class="container">
     <nav>
       <a href="index.html">
-        <img src="img/nerds-logo.png" alt="Логотип" width="160" height="65">
+        <img src="img/nerds-logo.png" alt="Логотип" width="160" height="66">
       </a>
       <ul>
         <li>
@@ -23,7 +27,7 @@
           </a>
         </li>
         <li>
-          <a href="catalog.html">
+          <a href="catalog.html" class="active-link">
             Магазин
           </a>
         </li>
@@ -38,12 +42,12 @@
   </div>
 </header>
 <main>
-  <h1>Магазин готовых шаблонов</h1>
+  <h1 class="h1">Магазин готовых шаблонов</h1>
   <div class="container">
     <section>
       <h2 class="visually-hidden">Фильтр</h2>
-      <form action="#" method="get">
-        <fieldset>
+      <form action="#" method="get" class="form-filter">
+        <fieldset class="fieldset-price">
           <legend>Стоимость:</legend>
           <!--          TODO Here will be a range-->
           <label>
@@ -53,7 +57,7 @@
             от<input type="number" max="15000" name="max-price" value="15000">
           </label>
         </fieldset>
-        <fieldset>
+        <fieldset class="fieldset-grid">
           <legend>Сетка:</legend>
           <ul>
             <li>
@@ -76,7 +80,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="fieldset-features">
           <legend>Особенности:</legend>
           <ul>
             <li>
@@ -111,28 +115,28 @@
             </li>
           </ul>
         </fieldset>
-        <button type="submit">Показать</button>
+        <button type="submit" class="button button-filter">Показать</button>
       </form>
     </section>
-    <section>
-      <h2>Сортировать:</h2>
+    <section class="sort-section">
+      <h2 class="header-sort">Сортировать:</h2>
       <ul>
         <li>
-          <a href="#" aria-label="Сортировать по цене">По цене</a>
+          <a href="#" aria-label="Сортировать по цене" class="link-sort link-sort_active">По цене</a>
         </li>
         <li>
-          <a href="#" aria-label="Сортировать по типу">По типу</a>
+          <a href="#" aria-label="Сортировать по типу" class="link-sort">По типу</a>
         </li>
         <li>
-          <a href="#" aria-label="Сортировать по названию">По названию</a>
+          <a href="#" aria-label="Сортировать по названию" class="link-sort">По названию</a>
         </li>
       </ul>
       <ul>
         <li>
-          <a href="#" aria-label="Сортировать по убыванию">По убыванию</a>
+          <a href="#" aria-label="Сортировать по убыванию" class="link-sort link-sort_active">По убыванию</a>
         </li>
         <li>
-          <a href="#" aria-label="Сортировать по возрастанию">По возрастанию</a>
+          <a href="#" aria-label="Сортировать по возрастанию" class="link-sort">По возрастанию</a>
         </li>
       </ul>
     </section>
@@ -140,95 +144,95 @@
       <h2 class="visually-hidden">Каталог</h2>
       <article>
         <img src="img/product-sedona.jpg" alt="Седона" width="360" height="580">
-        <section>
+        <section class="product-hover-section">
           <h3>Sedona</h3>
           <p>Информационный сайт для туристов</p>
-          <a href="#" aria-label="Ссылка на покупку сайта Седоны за 9 900 рублей">9 900 &#8381;</a>
+          <a href="#" aria-label="Ссылка на покупку сайта Седоны за 9 900 рублей" class="button">9 900 &#8381;</a>
         </section>
       </article>
       <article>
-        <img src="img/product-pink.jpg" alt="Pink" width="360" height="580">
-        <section>
+        <img src="img/product-pink.jpg" alt="Pink" width="358" height="578">
+        <section class="product-hover-section">
           <h3>Pink App</h3>
           <p>Продуктовый лендинг приложения для IOS и Android</p>
-          <a href="#" aria-label="Ссылка на покупку сайта Pink App за 9 900 рублей">9 900 &#8381;</a>
+          <a href="#" aria-label="Ссылка на покупку сайта Pink App за 9 900 рублей" class="button">9 900 &#8381;</a>
         </section>
       </article>
       <article>
-        <img src="img/product-borodinskii.jpg" alt="Borodinski" width="360" height="580">
-        <section>
+        <img src="img/product-borodinskii.jpg" alt="Borodinski" width="358" height="578">
+        <section class="product-hover-section">
           <h3>Borodinski</h3>
           <p>Сайт салона красоты. Для мужчин, да.</p>
-          <a href="#" aria-label="Ссылка на покупку сайта Бородинского за 9 900 рублей">9 900 &#8381;</a>
+          <a href="#" aria-label="Ссылка на покупку сайта Бородинского за 9 900 рублей" class="button">9 900 &#8381;</a>
         </section>
       </article>
       <article>
-        <img src="img/product-mishka.jpg" alt="Mishka" width="360" height="580">
-        <section>
+        <img src="img/product-mishka.jpg" alt="Mishka" width="358" height="578">
+        <section class="product-hover-section">
           <h3>Mishka</h3>
           <p>Интернет-магазин вязанных игрушек</p>
-          <a href="#" aria-label="Ссылка на покупку сайта Мишки за 9 900 рублей">9 900 &#8381;</a>
+          <a href="#" aria-label="Ссылка на покупку сайта Мишки за 9 900 рублей" class="button">9 900 &#8381;</a>
         </section>
       </article>
       <article>
-        <img src="img/product-education.jpg" alt="A plus" width="360" height="580">
-        <section>
+        <img src="img/product-education.jpg" alt="A plus" width="358" height="578">
+        <section class="product-hover-section">
           <h3>A plus</h3>
           <p>Лендинг курсов повышения квалификации</p>
-          <a href="#" aria-label="Ссылка на покупку сайта Курсов за 9 900 рублей">9 900 &#8381;</a>
+          <a href="#" aria-label="Ссылка на покупку сайта Курсов за 9 900 рублей" class="button">9 900 &#8381;</a>
         </section>
       </article>
       <article>
-        <img src="img/product-beer.jpg" alt="Кваст" width="360" height="580">
-        <section>
+        <img src="img/product-beer.jpg" alt="Кваст" width="358" height="578">
+        <section class="product-hover-section">
           <h3>Кваст</h3>
           <p>Промо-сайт производителя крафтового кваса</p>
-          <a href="#" aria-label="Ссылка на покупку сайта Пива за 9 900 рублей">9 900 &#8381;</a>
+          <a href="#" aria-label="Ссылка на покупку сайта Пива за 9 900 рублей" class="button">9 900 &#8381;</a>
         </section>
       </article>
     </section>
     <section>
       <h2 class="visually-hidden">Страницы</h2>
-      <a href="#" aria-label="Перейти на 1ую страницу">1</a>
-      <a href="#" aria-label="Перейти на 2ую страницу">2</a>
-      <a href="#" aria-label="Перейти на 3ую страницу">3</a>
-      <a href="#" aria-label="Перейти на следующую страницу">Следующая</a>
+      <a href="#" aria-label="Перейти на 1ую страницу" class="button page-button page-button-active">1</a>
+      <a href="#" aria-label="Перейти на 2ую страницу" class="button page-button">2</a>
+      <a href="#" aria-label="Перейти на 3ую страницу" class="button page-button">3</a>
+      <a href="#" aria-label="Перейти на следующую страницу" class="button page-button">Следующая</a>
     </section>
   </div>
 </main>
 <footer>
   <div class="container container_big">
-    <section>
+    <section class="map-block">
       <h2 class="visually-hidden">Карта</h2>
       <a href="#">
         <img src="img/map.png" alt="Карта с адресом" width="1440" height="416">
       </a>
-      <section>
+      <article>
         <h3>NЁRDS DESIGN STUDIO</h3>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p>
           тел. <a href="tel:+78122757575" aria-label="Телефонный контакт">+7(812)275-75-75</a>
         </p>
-        <a href="#">Напишите нам</a>
-      </section>
+        <a href="#" class="button">Напишите нам</a>
+      </article>
     </section>
   </div>
   <div class="container">
-    <section>
+    <section class="lets-be-friends-block">
       <h2 class="visually-hidden">Давайте дружить</h2>
       <ul>
         <li>
-          <a href="#">
+          <a href="#" class="button social-button">
             <img src="img/vk-icon.svg" alt="Ссылка на вк" width="27" height="15">
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" class="button social-button">
             <img src="img/fb-icon.svg" alt="Карта с адресом" width="12" height="22">
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" class="button social-button">
             <img src="img/insta-icon.svg" alt="Карта с адресом" width="21" height="21">
           </a>
         </li>
@@ -240,7 +244,7 @@
     </section>
   </div>
 </footer>
-<section>
+<section class="visually-hidden">
   <h2 class="visually-hidden">Здесь будет карта</h2>
   <!-- TODO Here will be a map -->
   <button type="button">Закрыть</button>

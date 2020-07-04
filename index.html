@@ -3,13 +3,17 @@
 <head>
   <meta charset="utf-8">
   <title>Нёрдс - Главная</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="main-header">
   <div class="container">
     <nav>
-      <a href="index.html">
-        <img src="img/nerds-logo.png" alt="Логотип" width="160" height="65">
+      <a href="index.html" class="logo">
+        <img src="img/nerds-logo.png" alt="Логотип" width="160" height="66">
       </a>
       <ul>
         <li>
@@ -38,57 +42,51 @@
   </div>
 </header>
 <main>
-  <section>
+  <section class="main-slider">
     <div class="container">
       <h2 class="visually-hidden">
         Слайдер в заголовке
       </h2>
       <ul>
         <li>
-          <button type="button" title="Текущий слайд">1</button>
+          <button type="button" title="Текущий слайд"></button>
         </li>
         <li>
-          <button type="button" title="2й слайд">2</button>
+          <button type="button" title="2й слайд"></button>
         </li>
         <li>
-          <button type="button" title="3й слайд">3</button>
+          <button type="button" title="3й слайд"></button>
         </li>
       </ul>
       <section class="main-header-slide-1">
-        <h3 class="visually-hidden">Слайдер - 1</h3>
-        <p>
-          Долго, дорого,<br>
-          скрупулезно.
-        </p>
+        <h3>
+          Долго, дорого, скрупулезно.
+        </h3>
         <p>
           Математически выверенный дизайн<br>
           для вашего сайта или мобильного приложения.
         </p>
-        <a href="#">Узнать больше</a>
+        <a href="#" class="button">Узнать больше</a>
       </section>
       <section class="main-header-slide-2">
-        <h3 class="visually-hidden">Слайдер - 2</h3>
-        <p>
-          Любим математику<br>
-          как никто другой
-        </p>
+        <h3>
+          Любим математику как никто другой
+        </h3>
         <p>
           Никакого креатива, только математически формулы<br>
           для расчета идеальных пропорций
         </p>
-        <a href="#">Узнать больше</a>
+        <a href="#" class="button">Узнать больше</a>
       </section>
       <section class="main-header-slide-3">
-        <h3 class="visually-hidden">Слайдер - 3</h3>
-        <p>
-          Только ночь,<br>
-          только хардкор
-        </p>
+        <h3>
+          Только ночь, только хардкор
+        </h3>
         <p>
           Работать днем, как все? Мы против этого.<br>
           Ближе к полуночи работа только начинается.
         </p>
-        <a href="#">Узнать больше</a>
+        <a href="#" class="button">Узнать больше</a>
       </section>
     </div>
   </section>
@@ -101,7 +99,7 @@
             <img src="img/illustration-1%201.png" alt="Сайты" width="300" height="146">
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a href="#">Заказать</a>
+            <a href="#" class="button">Заказать</a>
           </article>
         </li>
         <li>
@@ -109,7 +107,7 @@
             <img src="img/illustration-2%201.png" alt="Приложения" width="300" height="146">
             <h3>Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a href="#">Заказать</a>
+            <a href="#" class="button button-app-order">Заказать</a>
           </article>
         </li>
         <li>
@@ -117,12 +115,12 @@
             <img src="img/illustration-3%201.png" alt="Презентации" width="300" height="146">
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a href="#">Заказать</a>
+            <a href="#" class="button button-presentation-order">Заказать</a>
           </article>
         </li>
       </ul>
     </section>
-    <section>
+    <section class="about-us-block">
       <div>
         <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
         <p>
@@ -146,14 +144,14 @@
             <td>150<span>%</span></td>
           </tr>
           <tr>
-            <td>Уровень самоотдачи</td>
-            <td>Соблюдение сроков</td>
-            <td>Минимальная предоплата</td>
+            <th>Уровень самоотдачи</th>
+            <th>Соблюдение сроков</th>
+            <th>Минимальная предоплата</th>
           </tr>
         </table>
       </div>
     </section>
-    <section>
+    <section class="our-clients-section">
       <h2 class="visually-hidden">Наши работы</h2>
       <ul>
         <li>
@@ -181,38 +179,38 @@
   </div>
 </main>
 <footer>
-  <div class="container container_big">
-    <section>
+  <div class="container container_big map-block">
+    <section class="map-block">
       <h2 class="visually-hidden">Карта</h2>
       <a href="#">
         <img src="img/map.png" alt="Карта с адресом" width="1440" height="416">
       </a>
-      <section>
+      <article class="our-contacts-block">
         <h3>NЁRDS DESIGN STUDIO</h3>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p>
           тел. <a href="tel:+78122757575" aria-label="Телефонный контакт">+7(812)275-75-75</a>
         </p>
-        <a href="#">Напишите нам</a>
-      </section>
+        <a href="#" class="button">Напишите нам</a>
+      </article>
     </section>
   </div>
   <div class="container">
-    <section>
+    <section class="lets-be-friends-block">
       <h2 class="visually-hidden">Давайте дружить</h2>
       <ul>
         <li>
-          <a href="#">
+          <a href="#" class="button social-button">
             <img src="img/vk-icon.svg" alt="Ссылка на вк" width="27" height="15">
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" class="button social-button">
             <img src="img/fb-icon.svg" alt="Карта с адресом" width="12" height="22">
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" class="button social-button">
             <img src="img/insta-icon.svg" alt="Карта с адресом" width="21" height="21">
           </a>
         </li>
@@ -224,7 +222,7 @@
     </section>
   </div>
 </footer>
-<section>
+<section class="write-to-us-popup">
   <h2>Напишите нам</h2>
   <form action="#" method="post">
     <label>
@@ -240,11 +238,11 @@
       <textarea placeholder="В свободной форме">
       </textarea>
     </label>
-    <button type="submit">Отправить</button>
+    <button type="submit" class="button">Отправить</button>
   </form>
   <button type="button">Закрыть</button>
 </section>
-<section>
+<section class="visually-hidden">
   <h2 class="visually-hidden">Здесь будет карта</h2>
   <!-- TODO Here will be a map -->
   <button type="button">Закрыть</button>
