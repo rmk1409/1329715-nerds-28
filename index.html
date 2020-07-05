@@ -37,7 +37,7 @@
           </a>
         </li>
       </ul>
-      <a href="#">Корзина</a>
+      <a href="#" class="cart-link">Корзина</a>
     </nav>
   </div>
 </header>
@@ -47,47 +47,49 @@
       <h2 class="visually-hidden">
         Слайдер в заголовке
       </h2>
-      <ul class="main-slider-buttons">
-        <li>
-          <button type="button" title="Текущий слайд"></button>
+      <ul class="main-slider-list">
+        <li class="main-header-slide-1">
+          <h3>
+            Долго, дорого, скрупулезно.
+          </h3>
+          <p>
+            Математически выверенный дизайн<br>
+            для вашего сайта или мобильного приложения.
+          </p>
+          <a href="#" class="button">Узнать больше</a>
         </li>
-        <li>
-          <button type="button" title="2й слайд"></button>
+        <li class="main-header-slide-2">
+          <h3>
+            Любим математику как никто другой
+          </h3>
+          <p>
+            Никакого креатива, только математические формулы<br>
+            для расчета идеальных пропорций
+          </p>
+          <a href="#" class="button">Узнать больше</a>
         </li>
-        <li>
-          <button type="button" title="3й слайд"></button>
+        <li class="main-header-slide-3">
+          <h3>
+            Только ночь, только хардкор
+          </h3>
+          <p>
+            Работать днем, как все? Мы против этого.<br>
+            Ближе к полуночи работа только начинается.
+          </p>
+          <a href="#" class="button">Узнать больше</a>
         </li>
       </ul>
-      <section class="main-header-slide-1">
-        <h3>
-          Долго, дорого, скрупулезно.
-        </h3>
-        <p>
-          Математически выверенный дизайн<br>
-          для вашего сайта или мобильного приложения.
-        </p>
-        <a href="#" class="button">Узнать больше</a>
-      </section>
-      <section class="main-header-slide-2">
-        <h3>
-          Любим математику как никто другой
-        </h3>
-        <p>
-          Никакого креатива, только математически формулы<br>
-          для расчета идеальных пропорций
-        </p>
-        <a href="#" class="button">Узнать больше</a>
-      </section>
-      <section class="main-header-slide-3">
-        <h3>
-          Только ночь, только хардкор
-        </h3>
-        <p>
-          Работать днем, как все? Мы против этого.<br>
-          Ближе к полуночи работа только начинается.
-        </p>
-        <a href="#" class="button">Узнать больше</a>
-      </section>
+      <ul class="main-slider-buttons">
+        <li>
+          <button type="button" title="Текущий слайд" class="slider-button slider-button_active"></button>
+        </li>
+        <li>
+          <button type="button" title="2й слайд" class="slider-button"></button>
+        </li>
+        <li>
+          <button type="button" title="3й слайд" class="slider-button"></button>
+        </li>
+      </ul>
     </div>
   </section>
   <div class="container">
@@ -122,26 +124,28 @@
     </section>
     <section class="about-us-block">
       <div>
-        <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
+        <h2>Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара.</h2>
         <p>
           Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая
           рук, как роботы.
         </p>
         <h3>Выполняем заказы на разработку:</h3>
-        <ul>
+        <ul class="product-list">
           <li>Веб-сайтов любой сложности</li>
           <li>Мобильных приложений для IOS и Android</li>
           <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
       </div>
-      <div>
-        <img src="img/nerds-logo-big.png" alt="Логотип с красивым фоном" width="360" height="208">
-        <h3>С 2004 года любим точность во всем:</h3>
+      <div class="right-column">
+        <img src="img/nerds-logo-big.png" alt="Логотип с красивым фоном" width="360" height="208" class="logo-big">
         <table>
+          <caption>
+            <h3>С 2004 года любим точность во всем: </h3>
+          </caption>
           <tr>
             <td>146<span>%</span></td>
             <td>100<span>%</span></td>
-            <td>150<span>%</span></td>
+            <td>50<span>%</span></td>
           </tr>
           <tr>
             <th>Уровень самоотдачи</th>
@@ -190,10 +194,11 @@
         <p>
           191186, Санкт-Петербург,<br>
           ул. Б. Конюшенная, д. 19/8<br><br>
-          тел. <a href="tel:+78122757575" aria-label="Телефонный контакт">+7(812)275-75-75</a>
+          тел. <a href="tel:+78122757575" aria-label="Телефонный контакт">+7 (812) 275-75-75</a>
         </p>
-        <a href="#" class="button">Напишите нам</a>
+        <a href="#" class="button button-write-to-us">Напишите нам</a>
       </article>
+      <img src="img/map-marker.png" alt="Метка для карты" width="231" height="190" class="map-marker">
     </section>
   </div>
   <div class="container">
