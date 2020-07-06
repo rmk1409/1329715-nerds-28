@@ -408,17 +408,17 @@ a {
   position: absolute;
   left: 397px;
   top: -78px;
-  background-image: url("../img/nerds-index-slide1 1.png");
+  background-image: url("../img/nerds-index-slide1.png");
   background-repeat: no-repeat;
 }
 
 .main-header-slide-2::after {
-  background-image: url("../img/nerds-index-slide2 1.png");
+  background-image: url("../img/nerds-index-slide2.png");
   top: -78px;
 }
 
 .main-header-slide-3::after {
-  background-image: url("../img/nerds-index-slide3 1.png");
+  background-image: url("../img/nerds-index-slide3.png");
 }
 
 .button {
@@ -917,23 +917,23 @@ input::-webkit-inner-spin-button {
   position: absolute;
   width: 25px;
   height: 25px;
-  background-image: url("../img/radio-off.svg");
+  background-image: url("../img/custom-radio-off.svg");
   background-repeat: no-repeat;
   opacity: 0.4;
 }
 
 .check__box {
-  background-image: url("../img/checkbox-off.svg");
+  background-image: url("../img/custom-checkbox-off.svg");
   width: 23px;
   height: 23px;
 }
 
 .check__input:checked + .check__radio {
-  background-image: url("../img/radio-on.svg");
+  background-image: url("../img/custom-radio-on.svg");
 }
 
 .check__input:checked + .check__box {
-  background-image: url("../img/checkbox-on.svg");
+  background-image: url("../img/custom-checkbox-on.svg");
 }
 
 .check__input:focus + .check__radio,
