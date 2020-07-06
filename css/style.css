@@ -1138,6 +1138,15 @@ F
   opacity: 0.1;
 }
 
+.product-item__link:hover {
+  color: var(--basic-red);
+}
+
+.product-item__link:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
