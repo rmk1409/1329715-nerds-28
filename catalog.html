@@ -54,32 +54,45 @@
         <form action="#" method="get" class="form-filter">
           <fieldset class="fieldset-price">
             <legend>Стоимость:</legend>
-            <!--          TODO Here will be a range-->
-            <label>
-              от<input type="number" min="0" name="min-price" value="0">
-            </label>
-            <label>
-              от<input type="number" max="15000" name="max-price" value="15000">
-            </label>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0"></div>
+                <div class="toggle toggle-max" tabindex="0"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  от <input type="number" min="0" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  до <input type="number" max="15000" name="max-price" value="15000">
+                </label>
+              </div>
+            </div>
           </fieldset>
           <fieldset class="fieldset-grid">
             <legend>Сетка:</legend>
             <ul>
               <li>
-                <label>
-                  <input type="radio" name="grid" value="adaptive" checked>
+                <label class="check">
+                  <input class="check__input" type="radio" name="grid" value="adaptive" checked>
+                  <span class="check__radio"></span>
                   Адаптивная
                 </label>
               </li>
               <li>
-                <label>
-                  <input type="radio" name="grid" value="fixed">
+                <label class="check">
+                  <input class="check__input" type="radio" name="grid" value="fixed">
+                  <span class="check__radio"></span>
                   Фиксированная
                 </label>
               </li>
               <li>
-                <label>
-                  <input type="radio" name="grid" value="flexed">
+                <label class="check">
+                  <input class="check__input" type="radio" name="grid" value="flexed">
+                  <span class="check__radio"></span>
                   Резиновая
                 </label>
               </li>
@@ -89,32 +102,37 @@
             <legend>Особенности:</legend>
             <ul>
               <li>
-                <label>
-                  <input type="checkbox" name="slider" checked>
+                <label class="check">
+                  <input class="check__input" type="checkbox" name="slider" checked>
+                  <span class="check__box"></span>
                   Слайдер
                 </label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" name="advantages">
+                <label class="check">
+                  <input class="check__input" type="checkbox" name="advantages">
+                  <span class="check__box"></span>
                   Блок преимуществ
                 </label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" name="news" checked>
+                <label class="check">
+                  <input class="check__input" type="checkbox" name="news" checked>
+                  <span class="check__box"></span>
                   Новости
                 </label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" name="gallery">
+                <label class="check">
+                  <input class="check__input" type="checkbox" name="gallery">
+                  <span class="check__box"></span>
                   Галерея
                 </label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" name="bucket">
+                <label class="check">
+                  <input class="check__input" type="checkbox" name="bucket">
+                  <span class="check__box"></span>
                   Корзина
                 </label>
               </li>

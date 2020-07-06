@@ -5,6 +5,7 @@
   --basic-green: #00ca74;
   --green-hover: #00bc6c;
   --green-active: #00aa62;
+  --green-bar: #00ca74;
   --basic-yellow: #efc849;
   --yellow-hover: #eab534;
   --yellow-active: #e5a722;
@@ -18,6 +19,10 @@
   --grey-input-hover: #b4b9bb;
   --grey-slider-button_active: #c1c1c1;
   --grey-border: #dbdbdb;
+  --grey-range: #f1f1f1;
+  --grey-dark: #d7dcde;
+  --toggle-color: #ababab;
+  --shadow-color: #cfcfcf;
 }
 
 body {
@@ -486,6 +491,7 @@ a {
 
 .button-filter {
   width: 100%;
+  margin-top: 50px;
 }
 
 .button-filter,
@@ -496,12 +502,14 @@ a {
 
 .page-button {
   margin-right: 12px;
-  padding: 17px 20px 15px;
+  padding: 16px 17px 12px;
+  min-width: 50px;
+  min-height: 50px;
 }
 
 .page-button-next {
   width: 260px;
-  padding: 17px 77px 15px 79px;
+  padding: 17px 77px 15px 71px;
 }
 
 .page-button:last-child {
@@ -788,7 +796,8 @@ a {
   margin-bottom: 54px;
 }
 
-.fieldset-grid {
+.form-filter .fieldset-grid {
+  margin-top: 51px;
   margin-bottom: 45px;
 }
 
@@ -816,6 +825,127 @@ a {
 .fieldset-features label {
   font-size: 16px;
   line-height: 22px;
+}
+
+.range-filter {
+  width: 260px;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  background-color: var(--grey-range);
+  padding: 39px 20px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background-color: var(--grey-dark);
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: var(--green-bar);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: var(--toggle-color);
+  box-sizing: content-box;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--shadow-color);
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-controls input {
+  width: 80px;
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background: var(--grey-range);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.fieldset-grid li,
+.fieldset-features li {
+  margin-top: 15px;
+}
+
+.check {
+  padding-left: 36px;
+  margin-top: 0;
+}
+
+.check__input {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.check__radio,
+.check__box {
+  margin-left: -36px;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  opacity: 0.4;
+}
+
+.check__box {
+  background-image: url("../img/checkbox-off.svg");
+  width: 23px;
+  height: 23px;
+}
+
+.check__input:checked + .check__radio {
+  background-image: url("../img/radio-on.svg");
+}
+
+.check__input:checked + .check__box {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.check__input:focus + .check__radio,
+.check__input:hover + .check__radio,
+.check__input:focus + .check__box,
+.check__input:hover + .check__box {
+  opacity: 1;
+}
+
+.check__input:disabled + .check__radio,
+.check__input:disabled + .check__box {
+  opacity: 0.1;
 }
 
 .our-clients-section {
