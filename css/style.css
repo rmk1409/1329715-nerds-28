@@ -754,6 +754,87 @@ a {
   min-height: 590px;
 }
 
+@-webkit-keyframes bounce {
+  0% {
+    transform: translate(-50%, -250%);
+  }
+  70% {
+    transform: translate(-50%, -40%);
+  }
+  90% {
+    transform: translate(-50%, -52%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, -250%);
+  }
+  70% {
+    transform: translate(-50%, -40%);
+  }
+  90% {
+    transform: translate(-50%, -52%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@-webkit-keyframes shake {
+  10%, 90% {
+    transform: translate(-48%, -50%);
+  }
+
+  20%, 80% {
+    transform: translate(-52%, -50%);
+  }
+
+  30%, 50%, 70% {
+    transform: translate(-49%, -50%);
+  }
+
+  40%, 60% {
+    transform: translate(-51%, -50%);
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate(-48%, -50%);
+  }
+
+  20%, 80% {
+    transform: translate(-52%, -50%);
+  }
+
+  30%, 50%, 70% {
+    transform: translate(-49%, -50%);
+  }
+
+  40%, 60% {
+    transform: translate(-51%, -50%);
+  }
+}
+
+.modal-show {
+  display: block;
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+}
+
+.modal-error {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+}
+
 .write-to-us-popup {
   padding: 63px 100px 84px;
 }
@@ -1031,6 +1112,7 @@ input::-webkit-inner-spin-button {
   padding: 49px 50px 47px;
 }
 
+F
 .discount-div {
   width: 575px;
 }
