@@ -293,7 +293,7 @@
           ул. Б. Конюшенная, д. 19/8<br><br>
           тел. <a href="tel:+78122757575" aria-label="Телефонный контакт">+7(812)275-75-75</a>
         </p>
-        <a href="#" class="button">Напишите нам</a>
+        <a href="#" class="button button-write-to-us">Напишите нам</a>
       </article>
       <img src="img/map-marker.png" alt="Метка для карты" width="231" height="190" class="map-marker">
     </section>
@@ -325,6 +325,21 @@
     </section>
   </div>
 </footer>
+<section class="modal write-to-us-popup">
+  <h2>Напишите нам</h2>
+  <form action="#" method="post">
+    <label for="name-input">Ваше имя:</label>
+    <label for="email-input">Ваш email:</label>
+    <input id="name-input" type="text" placeholder="Имя Фамилия" name="name">
+    <input id="email-input" name="email" type="email" placeholder="email@example.com">
+    <label for="message-text-area" class="label-for-text-area">Текст письма:</label>
+    <textarea id="message-text-area" name="message" placeholder="В свободной форме"></textarea>
+    <button type="submit" class="button button-submit">Отправить</button>
+  </form>
+  <button type="button" class="button button-close" aria-label="Кнопка закрыть">
+    <img src="img/button-close.svg" width="21" height="21" alt="Картинка закрыть">
+  </button>
+</section>
 <section class="modal map-popup">
   <h2 class="visually-hidden">Здесь будет карта</h2>
   <iframe class="map-popup__iframe"
