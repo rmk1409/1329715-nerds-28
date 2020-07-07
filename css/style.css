@@ -35,7 +35,7 @@
 body {
   margin: 0;
   padding: 0;
-  min-width: 1460px;
+  min-width: 1158px;
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -75,11 +75,6 @@ a {
 
 .page {
   height: 100%;
-}
-
-.container_big {
-  width: 1440px;
-  padding: 0;
 }
 
 .main-header nav {
@@ -232,6 +227,7 @@ a {
 .map-block {
   position: relative;
   height: 416px;
+  width: 100%;
 }
 
 .main-header {
@@ -667,14 +663,13 @@ a {
   font-size: 45px;
   line-height: 64px;
   position: relative;
-  padding-right: 38px;
+  padding-right: 19px;
 }
 
-.about-us-block span {
-  position: absolute;
+.about-us-block sup {
   font-size: 26px;
   line-height: 40px;
-  top: 5px;
+  top: -16px;
 }
 
 .our-contacts-block h3,
@@ -1097,7 +1092,6 @@ input::-webkit-inner-spin-button {
   padding: 49px 50px 47px;
 }
 
-F
 .discount-div {
   width: 575px;
 }
