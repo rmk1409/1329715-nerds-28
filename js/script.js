@@ -21,15 +21,3 @@ writToUsPopupWindow.addEventListener("submit", function (evt) {
     writToUsPopupWindow.classList.add("modal-error");
   }
 })
-
-let buttonMap = document.querySelector(".map-popup-link");
-let mapPopupWindow = document.querySelector(".map-popup");
-let mapCloseButton = mapPopupWindow.querySelector(".button-close");
-
-buttonMap.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  mapPopupWindow.classList.toggle("modal-show");
-});
-mapCloseButton.addEventListener("click", function () {
-  mapPopupWindow.classList.toggle("modal-show");
-});

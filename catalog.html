@@ -172,7 +172,6 @@
       <section class="catalog-items">
         <h2 class="visually-hidden">Каталог</h2>
         <article class="product-item" tabindex="0">
-          <img src="img/product-hover.svg" width="360" height="40" alt="Вверхняя полоса" class="upper-row">
           <img src="img/product-sedona.jpg" alt="Седона" width="360" height="580" class="product-image">
           <section class="product-hover-section">
             <h3>
@@ -188,8 +187,7 @@
           </section>
         </article>
         <article class="product-item" tabindex="0">
-          <img src="img/product-hover.svg" width="360" height="40" alt="Вверхняя полоса" class="upper-row">
-          <img src="img/product-pink.jpg" alt="Pink" width="358" height="578" class="product-image">
+          <img src="img/product-pink.jpg" alt="Pink" width="360" height="580" class="product-image">
           <section class="product-hover-section">
             <h3>
               <a href="#" aria-label="Ссылка на карточку товара" class="product-item__link">
@@ -204,8 +202,7 @@
           </section>
         </article>
         <article class="product-item" tabindex="0">
-          <img src="img/product-hover.svg" width="360" height="40" alt="Вверхняя полоса" class="upper-row">
-          <img src="img/product-borodinskii.jpg" alt="Borodinski" width="358" height="578" class="product-image">
+          <img src="img/product-borodinskii.jpg" alt="Borodinski" width="360" height="580" class="product-image">
           <section class="product-hover-section">
             <h3>
               <a href="#" aria-label="Ссылка на карточку товара" class="product-item__link">
@@ -222,8 +219,7 @@
           </section>
         </article>
         <article class="product-item" tabindex="0">
-          <img src="img/product-hover.svg" width="360" height="40" alt="Вверхняя полоса" class="upper-row">
-          <img src="img/product-mishka.jpg" alt="Mishka" width="358" height="578" class="product-image">
+          <img src="img/product-mishka.jpg" alt="Mishka" width="360" height="580" class="product-image">
           <section class="product-hover-section">
             <h3>
               <a href="#" aria-label="Ссылка на карточку товара" class="product-item__link">
@@ -238,8 +234,7 @@
           </section>
         </article>
         <article class="product-item" tabindex="0">
-          <img src="img/product-hover.svg" width="360" height="40" alt="Вверхняя полоса" class="upper-row">
-          <img src="img/product-education.jpg" alt="A plus" width="358" height="578" class="product-image">
+          <img src="img/product-education.jpg" alt="A plus" width="360" height="580" class="product-image">
           <section class="product-hover-section">
             <h3>
               <a href="#" aria-label="Ссылка на карточку товара" class="product-item__link">
@@ -254,8 +249,7 @@
           </section>
         </article>
         <article class="product-item" tabindex="0">
-          <img src="img/product-hover.svg" width="360" height="40" alt="Вверхняя полоса" class="upper-row">
-          <img src="img/product-beer.jpg" alt="Кваст" width="358" height="578" class="product-image">
+          <img src="img/product-beer.jpg" alt="Кваст" width="360" height="580" class="product-image">
           <section class="product-hover-section">
             <h3>
               <a href="#" aria-label="Ссылка на карточку товара" class="product-item__link">
@@ -283,14 +277,18 @@
   <div class="container container_big">
     <section class="map-block">
       <h2 class="visually-hidden">Карта</h2>
-      <a href="#" class="map-popup-link">
-        <img src="img/map.png" alt="Карта с адресом" width="1440" height="416">
-      </a>
+      <iframe class="map-popup__iframe" aria-label="Интерактивная карта"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5944077412285!2d30.320765870178526!3d59.93887210972331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya%20Konyushennaya%20St%2C%2019%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sby!4v1594029918026!5m2!1sen!2sby"
+              width="1440" height="416" style="border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0">
+      </iframe>
       <article class="our-contacts-block">
-        <h3>NЁRDS DESIGN STUDIO</h3>
+        <h3>Nёrds design studio</h3>
         <p>
           191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8<br><br>
+          ул. Б. Конюшенная, д. 19/8<br>
+        </p>
+        <p>
           тел. <a href="tel:+78122757575" aria-label="Телефонный контакт">+7 (812) 275-75-75</a>
         </p>
         <a href="#" class="button button-write-to-us">Напишите нам</a>
@@ -336,20 +334,6 @@
     <textarea id="message-text-area" name="message" placeholder="В свободной форме"></textarea>
     <button type="submit" class="button button-submit">Отправить</button>
   </form>
-  <button type="button" class="button button-close" aria-label="Кнопка закрыть">
-    <img src="img/button-close.svg" width="21" height="21" alt="Картинка закрыть">
-  </button>
-</section>
-<section class="modal map-popup">
-  <h2 class="visually-hidden">Здесь будет карта</h2>
-  <iframe class="map-popup__iframe"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5944077412285!2d30.320765870178526!3d59.93887210972331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya%20Konyushennaya%20St%2C%2019%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sby!4v1594029918026!5m2!1sen!2sby"
-          width="960" height="590" style="border:0;" allowfullscreen="" aria-hidden="false"
-          tabindex="0">
-  </iframe>
-  <p>
-    <img src="img/map.png" alt="Карта с адресом" height="590" width="960">
-  </p>
   <button type="button" class="button button-close" aria-label="Кнопка закрыть">
     <img src="img/button-close.svg" width="21" height="21" alt="Картинка закрыть">
   </button>
