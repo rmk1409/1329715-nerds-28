@@ -230,6 +230,10 @@ a {
   width: 100%;
 }
 
+.map-block iframe {
+  width: 100%;
+}
+
 .main-header {
   padding-top: 49px;
 }
