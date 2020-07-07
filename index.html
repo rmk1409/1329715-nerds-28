@@ -5,33 +5,31 @@
   <title>Нёрдс - Главная</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
 <header class="main-header">
-  <div class="container">
-    <nav>
-      <a class="logo">
-        <img src="img/logo-nerds.png" alt="Логотип" width="160" height="66">
-      </a>
-      <ul class="navigation-links">
-        <li>
-          <a href="index.html">Студия</a>
-        </li>
-        <li>
-          <a href="#">Клиенты</a>
-        </li>
-        <li>
-          <a href="catalog.html">Магазин</a>
-        </li>
-        <li>
-          <a href="#">Контакты</a>
-        </li>
-      </ul>
-      <a href="#" class="cart-link">Корзина</a>
-    </nav>
-  </div>
+  <nav class="container">
+    <a class="logo">
+      <img src="img/logo-nerds.png" alt="Логотип" width="160" height="66">
+    </a>
+    <ul class="navigation-links">
+      <li>
+        <a href="index.html">Студия</a>
+      </li>
+      <li>
+        <a href="#">Клиенты</a>
+      </li>
+      <li>
+        <a href="catalog.html">Магазин</a>
+      </li>
+      <li>
+        <a href="#">Контакты</a>
+      </li>
+    </ul>
+    <a href="#" class="cart-link">Корзина</a>
+  </nav>
 </header>
 <main>
   <section class="main-slider">
@@ -81,8 +79,7 @@
       <h2 class="visually-hidden">Варианты продукции</h2>
       <ul>
         <li>
-          <article>
-            <img src="img/illustration-1.png" alt="Сайты" width="300" height="146">
+          <article class="product-options__web">
             <div class="context-block">
               <h3>Веб-сайты</h3>
               <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
@@ -91,8 +88,7 @@
           </article>
         </li>
         <li>
-          <article>
-            <img src="img/illustration-2.png" alt="Приложения" width="300" height="146">
+          <article class="product-options__app">
             <div class="context-block">
               <h3>Приложения</h3>
               <p>Покорите топ-10 приложений в AppStore и Google Play</p>
@@ -101,8 +97,7 @@
           </article>
         </li>
         <li>
-          <article>
-            <img src="img/illustration-3.png" alt="Презентации" width="300" height="146">
+          <article class="product-options__doc">
             <div class="context-block">
               <h3>Презентации</h3>
               <p>Вы даже не подозреваете, насколько вы изумительны!</p>
@@ -128,21 +123,21 @@
       </div>
       <div class="right-column">
         <img src="img/logo-big-nerds.png" alt="Логотип с красивым фоном" width="360" height="208" class="logo-big">
-        <table>
-          <caption>
-            <h3>С 2004 года любим точность во всем: </h3>
-          </caption>
-          <tr>
-            <td>146<sup>%</sup></td>
-            <td>100<sup>%</sup></td>
-            <td>50<sup>%</sup></td>
-          </tr>
-          <tr>
-            <th>Уровень самоотдачи</th>
-            <th>Соблюдение сроков</th>
-            <th>Минимальная предоплата</th>
-          </tr>
-        </table>
+        <h3>С 2004 года любим точность во всем: </h3>
+        <div class="right-column__grid">
+          <article>
+            <p>146<sup>%</sup></p>
+            <p>Уровень самоотдачи</p>
+          </article>
+          <article>
+            <p>100<sup>%</sup></p>
+            <p>Соблюдение сроков</p>
+          </article>
+          <article>
+            <p>50<sup>%</sup></p>
+            <p>Минимальная предоплата</p>
+          </article>
+        </div>
       </div>
     </section>
     <section class="our-clients-section">
@@ -231,9 +226,7 @@
     <textarea id="message-text-area" name="message" placeholder="В свободной форме"></textarea>
     <button type="submit" class="button button-submit">Отправить</button>
   </form>
-  <button type="button" class="button button-close" aria-label="Кнопка закрыть">
-    <img src="img/button-close.svg" width="21" height="21" alt="Картинка закрыть">
-  </button>
+  <button type="button" class="button button-close" aria-label="Кнопка закрыть"></button>
 </section>
 <script src="js/script.min.js"></script>
 </body>
