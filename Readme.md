@@ -1,5 +1,7 @@
 # Личный проект «Нёрдс»
 
+You can have a look at this website - [here](https://rmk1409.github.io/1329715-nerds-28/).
+
 * Студент: [R P](https://up.htmlacademy.ru/htmlcss/28/user/1329715).
 * Наставник: `Виктория Коваленко`.
 
